@@ -1,0 +1,14 @@
+{
+  "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.": "AG-UI 是一套智能体与用户交互协议，让智能体接入前端应用。",
+  "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.": "经阿里巴巴大规模场景验证的代码审查工具，结合确定性流程与大模型智能体，可精准生成行级评论。内置多语言规则集，涵盖空指针、线程安全、XSS 和 SQL 注入，兼容 OpenAI 和 Anthropic。",
+  "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.": "用于管理和跟进智能体工作的协作空间。支持梳理需求、制定计划、批注、审查代码和团队共享，并可一键把反馈发给智能体。",
+  "Chrome DevTools for coding agents": "面向编程智能体的 Chrome 开发者工具。",
+  "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.": "用 Univer Office SDK 构建自己的 AI 办公应用，为用户和智能体提供编辑、计算、协作和文件处理能力，底层采用可扩展的开源架构。",
+  "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.": "适用于漏洞排查和外部红队评估的 Claude Code 技能包，涵盖 24 类常见漏洞、企业身份和基础设施安全。",
+  "Tensor library for machine learning": "面向机器学习的张量库。",
+  "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.": "配合 Stitch MCP 服务器使用的智能体技能库。技能遵循 Agent Skills 开放标准，兼容 Antigravity、Gemini CLI、Claude Code 和 Cursor 等编程助手。",
+  "Keep your coding agent up to date with the latest web best practices": "让编程智能体及时掌握最新的 Web 开发最佳实践。",
+  "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.": "用于评估 AI 智能体技能的多层框架，支持质量门槛、语义重叠检测、合成评测数据生成和实时评测，可衡量技能对智能体行为的影响。",
+  "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.": "可自托管的编程智能体交付工作流，用脚本和人工审批流程编排 CodeBuddy、Codex 和 Claude Code，并为编程助手提供本地工作流。",
+  "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.": "面向股票投资者和交易者的 Claude Code 技能，涵盖市场分析、技术图表、经济日历、股票筛选和交易策略开发。"
+}

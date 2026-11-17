@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub 热门项目工作台</title>
+<style>
+* { box-sizing:border-box }
+:root { color-scheme:light; --ink:#182922; --muted:#52655a; --line:#dce5de; --accent:#176644 }
+body { margin:0;background:#f2f5ef;color:var(--ink);font:15px/1.55 "Instrument Sans",system-ui,sans-serif }
+main { max-width:1360px;margin:auto;padding:clamp(16px,4vw,56px) }
+header { padding:clamp(22px,4vw,42px);background:#173a2e;color:#fff;border-radius:22px;display:flex;justify-content:space-between;gap:24px;align-items:end;flex-wrap:wrap }
+h1 { margin:0;font-size:clamp(28px,4vw,48px);letter-spacing:-.045em;line-height:1.15 }
+h2 { margin:0;font-size:23px }
+.stats { display:flex;flex-wrap:wrap;gap:28px;margin:0 }
+.stats div { min-width:90px }
+.stats dt { color:#c4dece;font-size:13px }
+.stats dd { font-size:22px;font-weight:700;margin:2px 0 0;font-variant-numeric:tabular-nums }
+section { margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden }
+.toolbar { padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap }
+.controls { display:flex;gap:10px;flex-wrap:wrap }
+input,select { font:inherit;color:var(--ink);background:#f8faf7;border:1px solid #cbd8cd;border-radius:9px;padding:8px 12px;max-width:100% }
+:focus-visible { outline:2px solid #24865d;outline-offset:3px }
+.panel { overflow:auto }
+table { width:100%;border-collapse:collapse;min-width:800px }
+th,td { padding:15px 18px;text-align:left;border-top:1px solid var(--line);vertical-align:top }
+th { background:#eff4ed;color:#45594c;font-size:13px;white-space:nowrap }
+tbody tr:hover { background:#f8faf7 }
+.project { width:46%;overflow-wrap:anywhere }
+a { color:var(--accent);font-weight:750;text-decoration:none }
+a:hover { text-decoration:underline }
+small { display:block;margin-top:4px;color:var(--muted);font-size:13px }
+details { margin-top:7px;color:var(--muted);font-size:13px }
+summary { cursor:pointer;color:var(--accent);width:fit-content }
+details ul { margin:6px 0;padding-left:22px }
+.num { white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:650 }
+.language { display:inline-block;background:#eff4ed;padding:2px 8px;border-radius:6px;font-size:13px }
+.note,#empty { margin:14px 24px;color:var(--muted);font-size:13px }
+</style>
+<main>
+<header><h1>GitHub 选题工作台</h1>
+<dl class="stats">
+<div><dt>项目总数</dt><dd>12</dd></div>
+<div><dt>最近一天观测</dt><dd>12</dd></div>
+<div><dt>最近观测日期</dt><dd>2026-11-16</dd></div>
+</dl></header>
+<section aria-labelledby="projects">
+<div class="toolbar"><h2 id="projects">项目库</h2>
+<div class="controls">
+<input type="search" id="search" aria-label="搜索项目" placeholder="搜索仓库、简介或语言">
+<select id="sort" aria-label="排序方式">
+<option value="date">最近观测</option>
+<option value="stars">Star 总数</option>
+<option value="growth">较昨日增长率</option>
+<option value="week">近 7 天净增</option>
+</select></div></div>
+<div class="panel"><table><thead><tr><th>项目</th><th>语言</th>
+<th>Star 总数</th><th>最近观测</th><th>较昨日净增</th><th>近 7 天净增</th></tr></thead>
+<tbody>
+<tr data-stars="26763" data-date="2026-11-16" data-week=""
+ data-growth=""><td class="project"><a href="https://github.com/dream-num/univer">dream-num/univer</a>
+<small>用 Univer Office SDK 构建自己的 AI 办公应用，为用户和智能体提供编辑、计算、协作和文件处理能力，底层采用可扩展的开源架构。</small>
+<details><summary>星数历史</summary><ul><li>2026-11-16 · 26,763 Star</li></ul></details></td>
+<td><span class="language">TypeScript</span></td><td class="num">26,763</td>
+<td>2026-11-16</td><td class="num">—</td><td class="num">—</td></tr>
+<tr data-stars="18266" data-date="2026-11-16" data-week=""
+ data-growth=""><td class="project"><a href="https://github.com/ag-ui-protocol/ag-ui">ag-ui-protocol/ag-ui</a>
+<small>AG-UI 是一套智能体与用户交互协议，让智能体接入前端应用。</small>
+<details><summary>星数历史</summary><ul><li>2026-11-16 · 18,266 Star</li></ul></details></td>
+<td><span class="language">TypeScript</span></td><td class="num">18,266</td>
+<td>2026-11-16</td><td class="num">—</td><td class="num">—</td></tr>
+<tr data-stars="9527" data-date="2026-11-16" data-week=""
+ data-growth=""><td class="project"><a href="https://github.com/google-labs-code/stitch-skills">google-labs-code/stitch-skills</a>
+<small>配合 Stitch MCP 服务器使用的智能体技能库。技能遵循 Agent Skills 开放标准，兼容 Antigravity、Gemini CLI、Claude Code 和 Cursor 等编程助手。</small>
+<details><summary>星数历史</summary><ul><li>2026-11-16 · 9,527 Star</li></ul></details></td>
+<td><span class="language">TypeScript</span></td><td class="num">9,527</td>
+<td>2026-11-16</td><td class="num">—</td><td class="num">—</td></tr>
+<tr data-stars="12151" data-date="2026-11-16" data-week=""
+ data-growth=""><td class="project"><a href="https://github.com/backnotprop/plannotator">backnotprop/plannotator</a>
+<small>用于管理和跟进智能体工作的协作空间。支持梳理需求、制定计划、批注、审查代码和团队共享，并可一键把反馈发给智能体。</small>
+<details><summary>星数历史</summary><ul><li>2026-11-16 · 12,151 Star</li></ul></details></td>
+<td><span class="language">TypeScript</span></td><td class="num">12,151</td>
+<td>2026-11-16</td><td class="num">—</td><td class="num">—</td></tr>
+<tr data-stars="57335" data-date="2026-11-16" data-week=""
+ data-growth=""><td class="project"><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">ChromeDevTools/chrome-devtools-mcp</a>
+<small>面向编程智能体的 Chrome 开发者工具。</small>
+<details><summary>星数历史</summary><ul><li>2026-11-16 · 57,335 Star</li></ul></details></td>
+<td><span class="language">TypeScript</span></td><td class="num">57,335</td>
+<td>2026-11-16</td><td class="num">—</td><td class="num">—</td></tr>
+<tr data-stars="52551" data-date="2026-11-16" data-week=""
+ data-growth=""><td class="project"><a href="https://github.com/alibaba/open-code-review">alibaba/open-code-review</a>
+<small>经阿里巴巴大规模场景验证的代码审查工具，结合确定性流程与大模型智能体，可精准生成行级评论。内置多语言规则集，涵盖空指针、线程安全、XSS 和 SQL 注入，兼容 OpenAI 和 Anthropic。</small>
+<details><summary>星数历史</summary><ul><li>2026-11-16 · 52,551 Star</li></ul></details></td>
+<td><span class="language">Go</span></td><td class="num">52,551</td>
+<td>2026-11-16</td><td class="num">—</td><td class="num">—</td></tr>
+<tr data-stars="2081" data-date="2026-11-16" data-week=""
+ data-growth=""><td class="project"><a href="https://github.com/Tencent/LoopForge">Tencent/LoopForge</a>
+<small>可自托管的编程智能体交付工作流，用脚本和人工审批流程编排 CodeBuddy、Codex 和 Claude Code，并为编程助手提供本地工作流。</small>
+<details><summary>星数历史</summary><ul><li>2026-11-16 · 2,081 Star</li></ul></details></td>
+<td><span class="language">Go</span></td><td class="num">2,081</td>
+<td>2026-11-16</td><td class="num">—</td><td class="num">—</td></tr>
+<tr data-stars="16042" data-date="2026-11-16" data-week=""
+ data-growth=""><td class="project"><a href="https://github.com/ggml-org/ggml">ggml-org/ggml</a>
+<small>面向机器学习的张量库。</small>
+<details><summary>星数历史</summary><ul><li>2026-11-16 · 16,042 Star</li></ul></details></td>
+<td><span class="language">C++</span></td><td class="num">16,042</td>
+<td>2026-11-16</td><td class="num">—</td><td class="num">—</td></tr>
+<tr data-stars="6924" data-date="2026-11-16" data-week=""
+ data-growth=""><td class="project"><a href="https://github.com/elementalsouls/Claude-BugHunter">elementalsouls/Claude-BugHunter</a>
+<small>适用于漏洞排查和外部红队评估的 Claude Code 技能包，涵盖 24 类常见漏洞、企业身份和基础设施安全。</small>
+<details><summary>星数历史</summary><ul><li>2026-11-16 · 6,924 Star</li></ul></details></td>
+<td><span class="language">Python</span></td><td class="num">6,924</td>
+<td>2026-11-16</td><td class="num">—</td><td class="num">—</td></tr>
+<tr data-stars="7633" data-date="2026-11-16" data-week=""
+ data-growth=""><td class="project"><a href="https://github.com/GoogleChrome/modern-web-guidance-src">GoogleChrome/modern-web-guidance-src</a>
+<small>让编程智能体及时掌握最新的 Web 开发最佳实践。</small>
+<details><summary>星数历史</summary><ul><li>2026-11-16 · 7,633 Star</li></ul></details></td>
+<td><span class="language">TypeScript</span></td><td class="num">7,633</td>
+<td>2026-11-16</td><td class="num">—</td><td class="num">—</td></tr>
+<tr data-stars="5907" data-date="2026-11-16" data-week=""
+ data-growth=""><td class="project"><a href="https://github.com/tradermonty/claude-trading-skills">tradermonty/claude-trading-skills</a>
+<small>面向股票投资者和交易者的 Claude Code 技能，涵盖市场分析、技术图表、经济日历、股票筛选和交易策略开发。</small>
+<details><summary>星数历史</summary><ul><li>2026-11-16 · 5,907 Star</li></ul></details></td>
+<td><span class="language">Python</span></td><td class="num">5,907</td>
+<td>2026-11-16</td><td class="num">—</td><td class="num">—</td></tr>
+<tr data-stars="2120" data-date="2026-11-16" data-week=""
+ data-growth=""><td class="project"><a href="https://github.com/NVIDIA/SkillEvaluator">NVIDIA/SkillEvaluator</a>
+<small>用于评估 AI 智能体技能的多层框架，支持质量门槛、语义重叠检测、合成评测数据生成和实时评测，可衡量技能对智能体行为的影响。</small>
+<details><summary>星数历史</summary><ul><li>2026-11-16 · 2,120 Star</li></ul></details></td>
+<td><span class="language">Python</span></td><td class="num">2,120</td>
+<td>2026-11-16</td><td class="num">—</td><td class="num">—</td></tr></tbody></table></div>
+<p id="empty" role="status" hidden>没有匹配的项目。</p>
+<p class="note">增长以项目最近观测日为基准。缺少对应日期的快照时显示「—」。</p>
+</section></main>
+<script>
+const sort = document.querySelector('#sort');
+const table = document.querySelector('tbody');
+const search = document.querySelector('#search');
+const empty = document.querySelector('#empty');
+search.addEventListener('input', () => {
+  const query = search.value.trim().toLowerCase();
+  let matches = 0;
+  for (const row of table.rows) {
+    const text = [row.querySelector('.project a'), row.querySelector('small'),
+                  row.querySelector('.language')].map(node => node.textContent).join(' ');
+    row.hidden = !text.toLowerCase().includes(query);
+    if (!row.hidden) matches++;
+  }
+  empty.hidden = matches > 0;
+});
+sort.addEventListener('change', () => {
+  const key = sort.value;
+  const rows = Array.from(table.rows);
+  const score = row => row.dataset[key] === '' ? -Infinity : Number(row.dataset[key]);
+  rows.sort((a, b) => key === 'date' ? b.dataset.date.localeCompare(a.dataset.date) :
+    (score(b) - score(a)) || b.dataset.date.localeCompare(a.dataset.date));
+  table.append(...rows);
+});
+</script></html>

@@ -219,7 +219,7 @@ header {{ justify-content:space-between }}
 <main>
 <header><div><h1 id="projects">待审核项目</h1>
 <p class="page-meta"><span id="count">{len(rows)} 个项目</span></p></div>
-<div class="header-tools"><span>最近观测 <time>{date}</time></span><button type="button" class="save" id="refresh">刷新报表</button></div>
+<div class="header-tools"><span>最近观测 <time>{date}</time></span><button type="button" class="save" id="refresh">同步最新数据</button></div>
 </header>
 <dl class="metrics">
 <div><dt>待审核项目数</dt><dd id="pending-total">0</dd></div>
